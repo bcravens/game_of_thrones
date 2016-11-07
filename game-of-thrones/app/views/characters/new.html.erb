@@ -1,0 +1,49 @@
+<h3>New Character</h3>
+<%= form_for @character do |f| %>
+  <%= f.label :img_url %>
+  <%= f.text_field :img_url %>
+ <p></p>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+<p></p>
+  <%= f.label :title %>
+  <%= f.text_field :titles %>
+<p></p>
+  <%= f.label :alias %>
+  <%= f.text_field :alias %>
+<p></p>
+  <%= f.label :status %>
+  <%= f.text_field :status %>
+<p></p>
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+<p></p>
+  <%= f.label :origin %>
+  <%= f.text_field :origin %>
+<p></p>
+  <%= f.label :allegiance %>
+  <%= select_tag :house_id, options_for_select(@houses)  %>
+<p></p>
+  <%= f.label :predecessor %>
+  <%= f.text_field :predecessor %>
+<p></p>
+  <%= f.label :culture %>
+  <%= f.text_field :culture %>
+<p></p>
+  <%= f.label :father %>
+  <%= f.text_field :father %>
+<p></p>
+  <%= f.label :mother %>
+  <%= f.text_field :mother %>
+<p></p>
+  <%= f.label :children %>
+  <%= f.text_field :children %>
+<p></p>
+  <%= f.label :siblings %>
+  <%= f.text_field :siblings %>
+<p></p>
+  <%= f.label :lovers %>
+  <%= f.text_field :lovers %>
+<p></p>
+  <%= f.submit %>
+<% end %>

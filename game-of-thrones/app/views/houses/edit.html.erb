@@ -1,0 +1,40 @@
+<h3>Edit House</h3>
+<%= form_for @house do |f| %>
+  <%= f.label :img_url %>
+  <%= f.text_field :img_url %>
+
+  <%= f.label :sigil %>
+  <%= f.text_field :sigil %>
+
+  <%= f.label :words %>
+  <%= f.text_field :words %>
+
+  <%= f.label :titles %>
+  <%= f.text_field :titles %>
+
+  <%= f.label :seat %>
+  <%= f.text_field :seat %>
+
+  <%= f.label :religion %>
+  <%= f.text_field :religion %>
+
+  <%= f.label :lord %>
+  <%= f.text_field :lord %>
+
+  <%= f.label :heir %>
+  <%= f.text_field :heir %>
+
+  <%= f.label :allegiance %>
+  <%= f.text_field :allegiance %>
+
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+
+  <%= f.label :founder %>
+  <%= f.text_field :founder %>
+
+  <%= f.label :ancestral_weapon %>
+  <%= f.text_field :ancestral_weapon %>
+
+  <%= f.submit %>
+<% end %>

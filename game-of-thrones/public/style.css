@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(203, 201, 169);
+}
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+  font-size: 4em;
+}
+img {
+  height: 200px;
+  width: 200px;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+li {
+  margin-left: 60px;
+  margin-bottom: 20px;
+  font-family: 'Cinzel Decorative', cursive;
+}
+p {
+  font-family: 'Cinzel Decorative', cursive;
+}
+a {
+  text-decoration: none;
+}

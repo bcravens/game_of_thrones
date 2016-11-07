@@ -1,0 +1,49 @@
+<h3>Edit Character</h3>
+<%= form_for @character do |f| %>
+  <%= f.label :img_url %>
+  <%= f.text_field :img_url %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :title %>
+  <%= f.text_field :titles %>
+
+  <%= f.label :alias %>
+  <%= f.text_field :alias %>
+
+  <%= f.label :status %>
+  <%= f.text_field :status %>
+
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+
+  <%= f.label :origin %>
+  <%= f.text_field :origin %>
+
+  <%= f.label :allegiance %>
+  <%= f.text_field :allegiance %>
+
+  <%= f.label :predecessor %>
+  <%= f.text_field :predecessor %>
+
+  <%= f.label :culture %>
+  <%= f.text_field :culture %>
+
+  <%= f.label :father %>
+  <%= f.text_field :father %>
+
+  <%= f.label :mother %>
+  <%= f.text_field :mother %>
+
+  <%= f.label :children %>
+  <%= f.text_field :children %>
+
+  <%= f.label :siblings %>
+  <%= f.text_field :siblings %>
+
+  <%= f.label :lovers %>
+  <%= f.text_field :lovers %>
+
+  <%= f.submit %>
+<% end %>

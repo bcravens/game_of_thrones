@@ -1,0 +1,18 @@
+<img src="<%= @character.img_url %>" alt="">
+<h4>Name:</h4> <p><%= @character.name %></p>
+<h4>Title:</h4> <p><%= @character.titles %></p>
+<h4>Alias:</h4> <p><%= @character.alias %></p>
+<h4>Status:</h4> <p><%= @character.status %></p>
+<h4>Age:</h4> <p><%= @character.age %></p>
+<h4>Origin:</h4> <p><%= @character.origin %></p>
+<h4>Allegiance:</h4> <p><a href="/houses/<%= @character.allegiance %>">Link to House</a></p>
+<h4>Predcessor:</h4> <p><%= @character.predecessor %></p>
+<h4>Culture:</h4> <p><%= @character.culture %></p>
+<h4>Father:</h4> <p><%= @character.father%></p>
+<h4>Mother:</h4> <p><%= @character.mother%></p>
+<h4>Children:</h4> <p><%= @character.children%></p>
+<h4>Siblings:</h4> <p><%= @character.siblings%></p>
+<h4>Lovers:</h4> <p><%= @character.lovers%></p>
+
+<p><%= link_to "Edit", edit_character_path(@character) %></p>
+<p><%= link_to 'Delete Character', character_path(@character), method: :delete %></p>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GameOfThrones</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+  </head>
+
+  <body>
+    <a href="/houses"><h1>Game of Thrones!</h1></a>
+    <nav>
+      <a href="/houses"><li>Houses</li></a>
+      <a href="/characters"><li>Characters</li></a>
+      <a href="/houses/new"><li>Create New House</li></a>
+      <a href="/characters/new"><li>Create New Character</li></a>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

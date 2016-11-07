@@ -1,0 +1,15 @@
+<img src="<%= @house.img_url %>" alt="">
+<h4>Sigil:</h4> <p><%= @house.sigil %></p>
+<h4>Words:</h4> <p><%= @house.words %></p>
+<h4>Title:</h4> <p><%= @house.titles %></p>
+<h4>Seat:</h4> <p><%= @house.seat %></p>
+<h4>Region:</h4> <p><%= @house.religion %></p>
+<h4>Lord:</h4> <p><%= @house.lord %></p>
+<h4>Heir:</h4> <p><%= @house.heir %></p>
+<h4>Allegiance:</h4> <p><%= @house.allegiance %></p>
+<h4>Age:</h4> <p><%= @house.age %></p>
+<h4>Founder:</h4> <p><%= @house.founder%></p>
+<h4>Ancestral Weapon:</h4> <p><%= @house.ancestral_weapon%></p>
+
+<p><%= link_to "Edit", edit_house_path(@house) %></p>
+<p><%= link_to 'Delete House', house_path(@house), method: :delete %></p>
